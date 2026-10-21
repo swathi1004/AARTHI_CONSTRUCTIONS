@@ -332,7 +332,7 @@ function AppProvider({ children }) {
 function Logo({ dark = false }) {
   return (
     <Link className={`logo ${dark ? "logo-dark" : ""}`} to="/">
-      <img className="logo-image" src="/aarthi-logo.png" alt="Aarthi Constructions" />
+      <img className="logo-image" src={`${import.meta.env.BASE_URL}aarthi-logo.png`} alt="Aarthi Constructions" />
     </Link>
   );
 }
